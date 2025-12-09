@@ -41,7 +41,7 @@ li {
     font-weight: normal;
     text-decoration: none;
 
-    &:hover,
+    /* &:hover, */
     &:focus {
       color: var(--primary);
       border-color: var(--primary);
@@ -101,8 +101,6 @@ a[href="#design"] {
 /* Hieronder komen jouw animaties en stijlen */
 /*klik scale animatie*/
 
-a[href="#frontend"] {}
-
 .scale {
   animation-name: scaleUp;
   animation-timing-function: ease-out;
@@ -153,3 +151,26 @@ a[href="#frontend"] {}
   }
 
 }
+
+.focus {
+  color: white;
+  background-size: 200% 200%;
+  background-image:
+    linear-gradient(45deg in oklch longer hue,
+      orange,
+      orange,
+      orange);
+  animation: regenboog 1s infinite linear;
+  animation-play-state: running;
+
+  @keyframes regenboog {
+    0% {
+      background-position: bottom left;
+    }
+    100% {
+      background-position: top right;
+
+    }
+  }
+}
+
