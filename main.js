@@ -44,4 +44,52 @@ scaleLink.addEventListener('animationend', function() {
 
 
 
+//Stap 1: querySelector
+
+let translateLink = document.querySelector('a[href="#and"]')
+
+// Stap 2: addEventListener
+
+translateLink.addEventListener('click', function() {
+  translateLink.classList.add('translate3')
+})
+// translateLink.classList.remove...
+
+translateLink.addEventListener('animationend', function() {
+  translateLink.classList.remove('translate3')
+})
+
+
+
+
+//Stap 1: querySelector
+
+let shakeLink = document.querySelector('a[href="#development"]')
+
+// Stap 2: addEventListener
+
+shakeLink.addEventListener('dblclick', function() {
+  shakeLink.classList.add('translate3')
+})
+// shakeLink.classList.remove...
+
+shakeLink.addEventListener('animationend', function() {
+  shakeLink.classList.remove('translate3')
+})
+
+
+// focus
+let focusLink = document.querySelector('a[href="#sprint-5"]')
+
+// Stap 2: addEventListener
+
+focusLink.addEventListener('focus', function() {
+  focusLink.classList.add('focus')
+})
+// shakeLink.classList.remove...
+
+focusLink.addEventListener('animationend', function() {
+  focusLink.classList.remove('focus')
+})
+
 
