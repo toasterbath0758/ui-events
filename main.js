@@ -81,15 +81,23 @@ shakeLink.addEventListener('animationend', function() {
 // focus
 let focusLink = document.querySelector('a[href="#sprint-5"]')
 
-// Stap 2: addEventListener
-
+// Stap 2: addEventListener classList.add
 focusLink.addEventListener('focus', function() {
   focusLink.classList.add('focus')
 })
-// shakeLink.classList.remove...
 
+// focusLink.classList.remove...
 focusLink.addEventListener('animationend', function() {
   focusLink.classList.remove('focus')
 })
+
+
+
+function fixLeaveHandler() {
+  fixLink.innerText = "Fix"
+}
+
+
+
 
 
